@@ -38,8 +38,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: django-dist
-        run-id: ${{ github.event.workflow_run.id }}
-        path: book-shop/dist
+        path: book_shop/book-shop/dist
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
